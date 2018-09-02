@@ -8,6 +8,8 @@ gem 'bootstrap-sass'
 
 gem 'devise'
 
+gem 'pg', '->0.18'
+
 #cocoon
 gem 'jquery-turbolinks'
 gem "cocoon"
@@ -53,13 +55,10 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-group :production do
-	gem 'pg', '->0.18'
-end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-	gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
