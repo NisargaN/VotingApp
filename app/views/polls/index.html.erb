@@ -5,7 +5,7 @@
     <h2><%= poll.topic %> <small>(voted: <%= poll.votes_summary %>)</small></h2>
 
     <p>
-      <%= link_to 'Participate!', poll_path(poll), class: 'btn btn-primary btn-lg block' %>
+      <%= link_to 'Participate', poll_path(poll), class: 'btn btn-primary btn-lg block' %>
     </p>
     <% if current_user.is_admin == true && !user_signed_in? %>
     <div class="btn-group">

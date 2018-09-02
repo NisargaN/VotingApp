@@ -1,25 +1,26 @@
-# README
+Here is the documentation:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version : 2.3.1
 
-Things you may want to cover:
+Rails version : 5.2.0
 
-* Ruby version
-2.3.1
+Database : PostgreSQL as the database for ActiveRecord.
 
-* System dependencies
+Gemfile : 
+	*devise
+	*recaptcha
+	*Cocoon
+	*byebug
 
-* Configuration
+CSS : I have incorporated bootstrap css.
 
-* Database creation
+Deployment : Deployed on Heroku
 
-* Database initialization
+Application Flow :  
+	A User has to first sign up/register to participate in the voting process. 
+If the user logs in an Admin, then he can add polls by creating questions and providing suitable options to them.He can send the URL of the poll to other users. They have to sign in to vote. The Admin can see the results of the poll in his dashboard for the different questions.
 
-* How to run the test suite
+If the user is not an admin, then he would have received a URL from the Admin. He can then sign in and participate in the poll. He casts his vote. He can vote only once.
 
-* Services (job queues, cache servers, search engines, etc.)
+Thus the polling results can be viewed by the Admin and analyzed.
 
-* Deployment instructions
-
-* ...

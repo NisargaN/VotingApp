@@ -13,7 +13,7 @@ class PollsController < ApplicationController
     if current_user.is_admin == true
       @poll = Poll.new
     else
-      flash[:warning] = 'Only Admin Can Add Questions'
+      flash[:warning] = 'Sorry! Only Admin Can Add Questions..'
       redirect_to polls_path
     end
   end
