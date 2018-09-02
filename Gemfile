@@ -8,7 +8,7 @@ gem 'bootstrap-sass'
 
 gem 'devise'
 
-gem 'pg', '->0.18'
+gem 'pg'
 
 #cocoon
 gem 'jquery-turbolinks'
