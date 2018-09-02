@@ -1,0 +1,16 @@
+<% @polls.each do |poll| %>
+  <div class="well">
+    <h2><%= poll.topic %> <small>(voted: <%= poll.votes_summary %>)</small></h2>
+  </div>
+<% end %>
+
+<% @users.each do |user| %>
+	<div class="well">
+		<h2><%= user.email %></h2><small> Votes</small>
+		<br>
+    	<% user.votes.each do |vote| %>
+    	<h4>Question:<%= vote.vote_option.poll.topic %></h4><br>
+    		<h6><%= vote.vote_option.title %></h6><br>
+    	<% end %>
+    </div>
+<% end %>
