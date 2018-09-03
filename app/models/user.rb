@@ -4,8 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-has_many :votes, dependent: :destroy, inverse_of: :user
-has_many :vote_options, through: :votes, inverse_of: :user
+	has_many :votes, dependent: :destroy, inverse_of: :user
+	has_many :vote_options, through: :votes, inverse_of: :user
 
 
 # class << self

@@ -7,6 +7,6 @@ get '/sign_out', to: 'sessions#destroy', as: :sign_out
 resources :dashboard
 resources :votes, only: [:create]
 resources :users, only: [:show]
-esources :polls
+resources :polls
 root to: 'polls#index'
 end
