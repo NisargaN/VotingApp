@@ -15,7 +15,7 @@ gem 'jquery-turbolinks'
 gem "cocoon"
 gem 'recaptcha', require: "recaptcha/rails"
 
-
+gem 'omniauth-facebook'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'rails-ujs', '~> 0.1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
